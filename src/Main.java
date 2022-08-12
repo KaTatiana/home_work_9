@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Main {
     public static void main(String[] args) {
         Author grin =new Author("Александр","Грин");
@@ -22,5 +24,11 @@ public class Main {
 
         library.updateBookYear("Алые паруса",1955);
         library.printBooks();
+
+        System.out.println(grin.equals(robertHeinlein));
+        System.out.println(doorIntoSummer.equals(scarletSails));
+        System.out.println(grin.hashCode());
+        System.out.println(doorIntoSummer.hashCode());
+
     }
 }
